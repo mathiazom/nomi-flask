@@ -1,0 +1,56 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+#main_container {
+  display: flex;
+  width: 50%;
+  min-height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#name_container {
+  display: flex;
+  padding: 5px 20px;
+  margin: auto;
+  border-radius: 10px;
+  border: 3px dashed #212121AA;
+  align-items: center;
+  justify-content: center;
+}
+
+#name {
+  font-size: calc(1em + 2vw);
+  margin: 0;
+  margin-top: -5px;
+}
+
+#name :nth-child(1){
+  color: rgb(40, 153, 153);
+}
+
+#name :nth-child(2){
+  color: rgb(235, 53, 92);
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 5vh;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: calc(1em + 0.5vw);
+  color: #696969;
+  font-weight: 600;
+}
