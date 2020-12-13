@@ -32,7 +32,6 @@ a{
 #name {
   font-size: calc(1em + 2vw);
   margin: 0;
-  margin-top: -5px;
 }
 
 #name:hover{
