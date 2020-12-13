@@ -2,7 +2,6 @@ import os
 from flask import Flask, render_template, request, redirect, session
 import csv
 from random import choice
-import pyperclip
 
 app = Flask(__name__)
 
@@ -31,16 +30,6 @@ def main():
         nouns = read_words_from_csv("nouns.csv")
         noun = choice(nouns)
     return render_template('nomi.html',adjective=adjective,noun=noun)
-
-@app.route('/c')
-def copy():
-    adjective = request.args.get("a")
-    noun = request.args.get("n")
-    if adjective and noun:
-        pyperclip.copy(adjective+noun)
-        session['adjective'] = adjective
-        session['noun'] = noun
-    return redirect('/')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))

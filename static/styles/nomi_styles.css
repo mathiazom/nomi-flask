@@ -35,6 +35,10 @@ a{
   margin-top: -5px;
 }
 
+#name:hover{
+  cursor: pointer;
+}
+
 #name :nth-child(1){
   color: rgb(40, 153, 153);
 }
